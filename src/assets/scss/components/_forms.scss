@@ -1,0 +1,41 @@
+.form {
+  &__label {
+    display: block;
+    font-size: 14px;
+    line-height: 1.1;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__input {
+    padding: 15px;
+    font-size: 14px;
+    color: #B4B4B4;
+    width: 100%;
+    border: 1px solid $gold;
+    background-color: transparent;
+    &::placeholder {
+      font-size: 14px;
+      color: #B4B4B4;
+    }
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: $green;
+    }
+  }
+  &__submit {
+    padding: 16px;
+    color: #fff;
+    background-color: $green;
+    line-height: 1.1;
+    text-align: center;
+    width: 100%;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    &:hover {
+      color: #fff;
+      background-color: $gold;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.header {
+  padding: 13px 0;
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 20px;
+  }
+  &__phone {
+    font-weight: 700;
+    font-size: 18px;
+    color: $green;
+    transition: color .3s ease-in-out;
+    &:hover {
+      color: $green_black;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 0 6px;
+  &__img {
+    width: 190px;
+    height: 60px;
+  }
+  &__dot {
+    margin-bottom: 13px;
+    width: 6px;
+    height: 6px;
+    background-color: $green;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  &__text {
+    margin-bottom: 9px;
+    font-family: 'CTET', sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $green;
+  }
+}
+
+.login-btn {
+  gap: 0 6px;
+  padding: 10px 15px 10px 12px;
+  line-height: 1;
+  color: $green;
+  border: 1px solid $green;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  svg {
+    fill: currentColor;
+    transition: fill .3s ease-in-out
+  }
+  &:hover {
+    color: #fff;
+    background-color: $green;
+  }
+}
+

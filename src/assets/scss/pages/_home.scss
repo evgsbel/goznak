@@ -1,0 +1,180 @@
+// hero
+.hero {
+  margin-bottom: 40px;
+  padding: 36px 0;
+  background-color: #fffbef;
+  &__row {
+    display: flex;
+    font-family: 'CTET', serif;
+    text-transform: uppercase;
+    &_top {
+      align-items: flex-start;
+      gap: 0 13px
+    }
+    &_bottom {
+      align-items: flex-end;
+      gap: 0 26px
+    }
+  }
+  &__big-text {
+    font-size: 64px;
+    color: $green;
+  }
+  &__middle-text {
+    margin-top: 13px;
+    font-size: 22px;
+    font-style: italic;
+    color: $green_black;
+  }
+  &__small-text {
+    margin-bottom: 13px;
+    font-style: italic;
+    font-size: 12px;
+  }
+  &__img {
+    fill: $gold;
+  }
+}
+
+//authentication
+.authentication {
+  margin-bottom: 120px;
+  &__title {
+    margin-bottom: 15px;
+    font-family: 'CTET', serif;
+    font-size: 32px;
+    color: $green;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 20px;
+  }
+  &__form {
+    padding: 40px;
+    background-color: $green;
+  }
+  &__input {
+    border-color: #fff;
+    color: #d3d3d3;
+    &::placeholder {
+      font-size: 14px;
+      color: #d3d3d3;
+    }
+    &:focus,
+    &:active {
+      border-color: $gold;
+    }
+  }
+  &__submit {
+    color: $green;
+    background-color: #fff;
+  }
+  &__error {
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+.authentication-result {
+  padding: 28px 30px 20px;
+  background-color: $green;
+  &__caption {
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.about {
+  margin-bottom: 100px;
+  padding-top: 40px;
+  border-top: 1px solid $green_black;
+  &__logo {
+    margin-bottom: 20px;
+    fill: $green;
+  }
+  &__images {
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid $green_black;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__btn {
+    padding: 12px 20px;
+  }
+  &__description {
+    margin-left: auto;
+    max-width: 460px;
+  }
+}
+
+.social {
+  &__caption {
+    margin-bottom: 20px;
+    font-family: 'CTET', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 20px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $green;
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+    &:hover {
+      background-color: $gold;
+      border-color: $gold;
+    }
+  }
+  &__link {
+    color: $green;
+    text-align: center;
+    svg {
+      fill: currentColor;
+      transition: fill .3s ease-in-out;
+    }
+    &:hover {
+      color: #fff;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
