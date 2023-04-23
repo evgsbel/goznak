@@ -7,6 +7,12 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+    p {
+      margin-bottom: 10px;
+    }
+    span {
+      color: #ce4836;
+    }
   }
   &__input {
     padding: 15px;
@@ -25,7 +31,7 @@
       border-color: $green;
     }
   }
-  &__submit {
+  &__btn {
     padding: 16px;
     color: #fff;
     background-color: $green;
@@ -36,6 +42,11 @@
     &:hover {
       color: #fff;
       background-color: $gold;
+    }
+    &_transparent {
+      background-color: transparent;
+      color: $green;
+      border: 1px solid $green;
     }
   }
 }

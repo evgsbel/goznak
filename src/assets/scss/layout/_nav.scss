@@ -2,13 +2,15 @@
   position: absolute;
   top: 51px;
   left: 0;
-  z-index: -1;
+  z-index: 50;
+  visibility: hidden;
   padding: 15px 10px;
   background-color: #fff;
   box-shadow: 4px 4px 15px #C6B695;
   width: max-content;
   opacity: 0;
-  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+  transform: translateY(10px);
+  transition: all .5s ease-in-out;
   &__item {
     text-align: center;
     &:not(:last-child) {
@@ -29,7 +31,7 @@
 }
 
 .nav {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background-color: $green;
   &__list {
     display: flex;
@@ -48,7 +50,8 @@
     }
     &:hover > .sub-menu {
       opacity: 1;
-      z-index: 50;
+      visibility: visible;
+      transform: translateY(0);
     }
   }
   &__link {

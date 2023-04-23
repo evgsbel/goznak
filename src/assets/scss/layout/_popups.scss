@@ -1,0 +1,48 @@
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  &__caption {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  &__form {
+
+    margin: 0 auto;
+    padding: 35px;
+    width: 600px;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    margin-bottom: 10px;
+  }
+  &__link {
+    display: block;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    margin: 26px auto 0;
+    padding-bottom: 5px;
+    color: $green;
+    border-bottom: 1px solid $green;
+  }
+  &__close {
+    color: $green;
+    &:hover {
+      color: $green_black;
+    }
+  }
+  &__subcaption {
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  .modal-dialog {
+    max-width: 600px;
+  }
+}

@@ -92,3 +92,10 @@ img {
     }
   }
 }
+
+.only-mobile {
+  display: none;
+  @include r(576) {
+    display: block;
+  }
+}

@@ -1,7 +1,11 @@
-// //masked inputs
-// $(() => {
-//   Inputmask({"mask": "+7 (999) 999 - 99 - 99"}).mask('.phone-mask');
-// });
+// temp active menu item (remove on backend)
+$(function() {
+  $('.inner-nav a[href^="' + location.pathname.split("/")[1] + '"]').addClass('is-active');
+});
+//masked inputs
+$(() => {
+  Inputmask({"mask": "+7 (999) 999 - 99 - 99"}).mask('.phone-mask');
+});
 //
 // // tabs
 // document.addEventListener('DOMContentLoaded', function () {

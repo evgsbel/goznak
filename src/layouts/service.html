@@ -1,0 +1,54 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/animate.css">
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/swiper.min.css">
+  <link rel="stylesheet" href="{{root}}assets/css/main.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="{{root}}assets/css/rtl.css">
+</head>
+
+<body class="is-{{page}}-page">
+{{> header}}
+{{> nav}}
+{{>breadcrumbs}}
+<main role="main" class="main">
+  <nav class="inner-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="inner-nav__list">
+            <li class="inner-nav__item"><a href="certification.html" class="inner-nav__link">Сертификация монет</a>
+            </li>
+            <li class="inner-nav__item"><a href="numismatic.html" class="inner-nav__link">Нумизматическая экспертиза</a></li>
+            <li class="inner-nav__item"><a href="spectral-analysis.html" class="inner-nav__link">Спектральный анализ монет</a></li>
+            <li class="inner-nav__item"><a href="coin-cleaning.html" class="inner-nav__link">Чистка монет</a></li>
+            <li class="inner-nav__item"><a href="photo.html" class="inner-nav__link">Фотографирование монет</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  {{> banner}}
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        {{> body}}
+      </div>
+    </div>
+  </div>
+</main>
+<div class="js-stop-header"></div>
+{{> popups}}
+{{> scripts}}
+</body>
+
+</html>

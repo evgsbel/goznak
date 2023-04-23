@@ -30,7 +30,7 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-'layout/nav',
+  'layout/nav',
   'layout/popups';
 
 // 5. Components
@@ -40,7 +40,8 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/inner';
 
 // 7. Themes
 @import
