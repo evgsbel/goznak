@@ -21,26 +21,13 @@
 {{> nav}}
 {{>breadcrumbs}}
 <main role="main" class="main">
-  <nav class="inner-nav">
+
+  <div class="inner">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <ul class="inner-nav__list">
-            <li class="inner-nav__item"><a href="what-is.html" class="inner-nav__link {{is-active}}">Что такое грейдинг и слабирование</a>
-            </li>
-            <li class="inner-nav__item"><a href="kinds.html" class="inner-nav__link">Виды слабов</a></li>
-            <li class="inner-nav__item"><a href="processes.html" class="inner-nav__link">Описание процесса</a></li>
-            <li class="inner-nav__item"><a href="rating-scale.html" class="inner-nav__link">Шкала оценки</a></li>
-            <li class="inner-nav__item"><a href="payment.html" class="inner-nav__link">Условия оплаты</a></li>
-          </ul>
+          <h2 class="title-h2 mb-5">{{title}}</h2>
         </div>
-      </div>
-    </div>
-  </nav>
-  {{> banner}}
-  <div class="content">
-    <div class="container">
-      <div class="row">
         {{> body}}
       </div>
     </div>

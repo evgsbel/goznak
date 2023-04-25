@@ -1,0 +1,54 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/animate.css">
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/swiper.min.css">
+  <link rel="stylesheet" href="{{root}}assets/css/main.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="{{root}}assets/css/rtl.css">
+</head>
+
+<body class="is-{{page}}-page">
+{{> header}}
+{{> nav}}
+{{>breadcrumbs}}
+<main role="main" class="main">
+  <nav class="inner-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="inner-nav__list">
+            <li class="inner-nav__item"><a href="what-is.html" class="inner-nav__link {{is-active}}">Что такое грейдинг и слабирование</a>
+            </li>
+            <li class="inner-nav__item"><a href="kinds.html" class="inner-nav__link">Виды слабов</a></li>
+            <li class="inner-nav__item"><a href="processes.html" class="inner-nav__link">Описание процесса</a></li>
+            <li class="inner-nav__item"><a href="rating-scale.html" class="inner-nav__link">Шкала оценки</a></li>
+            <li class="inner-nav__item"><a href="payment.html" class="inner-nav__link">Условия оплаты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  {{> banner}}
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        {{> body}}
+      </div>
+    </div>
+  </div>
+</main>
+<div class="js-stop-header"></div>
+{{> popups}}
+{{> scripts}}
+</body>
+
+</html>
