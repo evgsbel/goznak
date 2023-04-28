@@ -7,13 +7,22 @@
     display: flex;
     font-family: 'CTET', serif;
     text-transform: uppercase;
+    @include r(576) {
+      flex-direction: column;
+    }
     &_top {
       align-items: flex-start;
-      gap: 0 13px
+      gap: 0 13px;
+      @include r(576) {
+        align-items: center;
+      }
     }
     &_bottom {
       align-items: flex-end;
-      gap: 0 26px
+      gap: 0 26px;
+      @include r(576) {
+        align-items: center;
+      }
     }
   }
   &__big-text {
@@ -30,9 +39,15 @@
     margin-bottom: 13px;
     font-style: italic;
     font-size: 12px;
+    @include r(576) {
+     order: 2;
+    }
   }
   &__img {
+    display: block;
+    margin-left: auto;
     fill: $gold;
+    max-width: 100%;
   }
 }
 
@@ -45,9 +60,16 @@
     font-size: 32px;
     color: $green;
     text-transform: uppercase;
+    @include r(768) {
+      text-align: center;
+    }
   }
   &__subtitle {
     font-size: 20px;
+    @include r(768) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
   &__form {
     padding: 40px;
@@ -106,8 +128,12 @@
   padding-top: 40px;
   border-top: 1px solid $green_black;
   &__logo {
+    display: block;
     margin-bottom: 20px;
     fill: $green;
+    @include r(768) {
+      margin: 0 auto 20px;
+    }
   }
   &__images {
     display: flex;
@@ -121,27 +147,55 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include r(960) {
+      flex-direction: column;
+    }
   }
   &__btn {
     padding: 12px 20px;
+    @include r(960) {
+     order: 2;
+    }
   }
   &__description {
     margin-left: auto;
     max-width: 460px;
+    @include r(960) {
+      margin-left: 0;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  }
+  img {
+    max-width: 45%;
+  }
+  &__title {
+    @include r(768) {
+      text-align: center;
+    }
   }
 }
 
 .social {
+  @include r(768) {
+    margin-top: 20px;
+  }
   &__caption {
     margin-bottom: 20px;
     font-family: 'CTET', serif;
     font-size: 24px;
     text-transform: uppercase;
+    @include r(768) {
+      text-align: center;
+    }
   }
   &__list {
     display: flex;
     align-items: flex-start;
     gap: 0 20px;
+    @include r(768) {
+      justify-content: center;
+    }
   }
 
   &__item {

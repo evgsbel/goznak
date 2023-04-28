@@ -18,11 +18,11 @@ main {
 body {
   background-color: #fff;
   color: $black;
-  //&.opened-menu {
-  //  @include r(1024) {
-  //  overflow: hidden;
-  //  }
-  //}
+  &.opened-menu {
+    @include r(576) {
+    overflow: hidden;
+    }
+  }
 }
 
 
@@ -95,7 +95,14 @@ img {
 
 .only-mobile {
   display: none;
-  @include r(576) {
+  @include r(768) {
     display: block;
+  }
+}
+
+.only-desktop {
+  display: block;
+  @include r(768) {
+    display: none;
   }
 }

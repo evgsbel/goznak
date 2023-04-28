@@ -1,16 +1,30 @@
 .header {
   padding: 13px 0;
+  @include r(576) {
+    margin-bottom: 30px;
+  }
   &__right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 0 20px;
+    @include r(768) {
+      justify-content: center;
+    }
+    @include r(375) {
+      flex-wrap: wrap;
+    }
   }
   &__phone {
     font-weight: 700;
     font-size: 18px;
     color: $green;
     transition: color .3s ease-in-out;
+    @include r(375) {
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
     &:hover {
       color: $green_black;
     }
@@ -21,6 +35,9 @@
   display: flex;
   align-items: flex-end;
   gap: 0 6px;
+  @include r(768) {
+    justify-content: center;
+  }
   &__img {
     width: 190px;
     height: 60px;
@@ -61,3 +78,18 @@
   }
 }
 
+.burger {
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  background-color: $green;
+  width: 50px;
+  height: 40px;
+  span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+}

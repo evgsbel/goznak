@@ -64,5 +64,9 @@ ul {
   font-size: 40px;
   color: $green;
   text-transform: uppercase;
+  @include r(1024) {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
 }
 
