@@ -55,3 +55,11 @@ $('.js-open-mobile-sub').click(function () {
   $(this).toggleClass('is-open');
   $(this).find('.sub-menu').toggleClass('is-open');
 });
+
+// open order
+$('.js-open-order').click(function () {
+  $(this).parent().toggleClass('is-open');
+});
+$('.orders-item__label').click(function (event) {
+  event.stopPropagation();
+});

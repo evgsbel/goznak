@@ -2,469 +2,421 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Условия оплаты</title>
-  <!-- build:css -->
-  <link rel="stylesheet" href="assets/vendor/css/animate.css">
-  <link rel="stylesheet" href="assets/vendor/css/swiper.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <!-- endbuild -->
-  <link rel="stylesheet" href="assets/css/rtl.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Условия оплаты</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/vendor/css/animate.css">
+    <link rel="stylesheet" href="assets/vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
 
 <body class="is-payment-page">
-<header class="header">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <a href="" class="logo header__Logo">
-          <svg class="logo__img" width="1">
-            <use xlink:href="assets/img/sprite.svg#logo-main"></use>
-          </svg>
-          <i class="logo__dot"></i>
-          <p class="logo__text">ГРЕЙДИНГ</p>
-        </a>
-      </div>
-      <div class="col-md-6">
-        <div class="header__right">
-          <a href="tel:+74957295666" class="header__phone">+7 (495) 729-56-66</a>
-          <button class="btn-reset header__btn login-btn" data-toggle="modal" data-target="#login">
-            <svg width="24" height="24">
-              <use xlink:href="assets/img/sprite.svg#icon-login"></use>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="" class="logo header__Logo">
+                        <svg class="logo__img" width="1">
+                            <use xlink:href="assets/img/sprite.svg#logo-main"></use>
+                        </svg>
+                        <i class="logo__dot"></i>
+                        <p class="logo__text">ГРЕЙДИНГ</p>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="header__right">
+                        <a href="tel:+74957295666" class="header__phone">+7 (495) 729-56-66</a>
+                        <button class="btn-reset header__btn login-btn" data-toggle="modal" data-target="#login">
+                            <svg width="24" height="24">
+                                <use xlink:href="assets/img/sprite.svg#icon-login"></use>
+                            </svg>
+                            <span>Войти</span>
+                        </button>
+                        <button class="btn-reset burger js-open-mobile-menu d-flex d-sm-none">
+                            <span></span><span></span><span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav js-mobile-menu">
+        <button class="btn-reset nav__close js-close-mobile-menu">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 17.1429L17.1429 0L18 0.857143L0.857143 18L0 17.1429Z" fill="#fff" />
+                <path d="M17.1429 18L0 0.857143L0.857143 0L18 17.1429L17.1429 18Z" fill="#fff" />
             </svg>
-            <span>Войти</span>
-          </button>
-          <button class="btn-reset burger js-open-mobile-menu d-flex d-sm-none">
-            <span></span><span></span><span></span>
-          </button>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item_sub js-open-mobile-sub">
+                            <a href="" class="nav__link">О компании</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Новости</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">О Гознаке</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item_sub js-open-mobile-sub">
+                            <a href="" class="nav__link">Услуги</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Сертификация монет</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Нумизматическая экспертиза</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Спектральный анализ монет</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Чистка монет</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Фотографирование монет</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item_sub js-open-mobile-sub">
+                            <a href="" class="nav__link">Сертификация монет и слабирование</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Что такое Грейдинг и слабирование</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Виды слабов</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Описание процесса</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Шкала оценки</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Условия оплаты</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Прейскурант</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="" class="sub-menu__link">Сроки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</header>
-<nav class="nav js-mobile-menu">
-  <button class="btn-reset nav__close js-close-mobile-menu">
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 17.1429L17.1429 0L18 0.857143L0.857143 18L0 17.1429Z" fill="#fff"/>
-      <path d="M17.1429 18L0 0.857143L0.857143 0L18 17.1429L17.1429 18Z" fill="#fff"/>
-    </svg>
-  </button>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <ul class="nav__list">
-          <li class="nav__item nav__item_sub js-open-mobile-sub">
-            <a href="" class="nav__link">О компании</a>
-            <ul class="sub-menu">
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Новости</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">О Гознаке</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item nav__item_sub js-open-mobile-sub">
-            <a href="" class="nav__link">Услуги</a>
-            <ul class="sub-menu">
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Сертификация монет</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Нумизматическая экспертиза</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Спектральный анализ монет</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Чистка монет</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Фотографирование монет</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item nav__item_sub js-open-mobile-sub">
-            <a href="" class="nav__link">Сертификация монет и слабирование</a>
-            <ul class="sub-menu">
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Что такое Грейдинг и слабирование</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Виды слабов</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Описание процесса</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Шкала оценки</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Условия оплаты</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Прейскурант</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="" class="sub-menu__link">Сроки</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
- <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-          <li class="breadcrumbs__item">
-            <a href="" class="breadcrumbs__link">Уровень два</a>
-          </li>
-          <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_active">Условия оплаты</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-<main role="main" class="main">
-  <nav class="inner-nav">
+    </nav>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <ul class="inner-nav__list">
-            <li class="inner-nav__item"><a href="what-is.html" class="inner-nav__link ">Что такое грейдинг и слабирование</a>
-            </li>
-            <li class="inner-nav__item"><a href="kinds.html" class="inner-nav__link">Виды слабов</a></li>
-            <li class="inner-nav__item"><a href="processes.html" class="inner-nav__link">Описание процесса</a></li>
-            <li class="inner-nav__item"><a href="rating-scale.html" class="inner-nav__link">Шкала оценки</a></li>
-            <li class="inner-nav__item"><a href="payment.html" class="inner-nav__link">Условия оплаты</a></li>
-          </ul>
+        <div class="row">
+            <div class="col-12">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link">Уровень два</a>
+                    </li>
+                    <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_active">Условия оплаты</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </nav>
-  <section class="banner">
-    <div class="container" >
-      <div class="row">
-        <div class="col-12">
-          <div class="banner__inner" style="background-image: url('assets/img/bn-03.jpg')">
-            <h1 class="banner__title">Условия оплаты</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <div class="content">
-    <div class="container">
-      <div class="row">
-        
-        <div class="col-12">
-          <div class="tariffs">
-            <div class="tariffs__row tariffs__row_head">
-              <div class="tariffs__item tariffs__item_head">Тариф, стоимость услуги</div>
-              <div class="tariffs__item tariffs__item_head">Рыночная стоимость монеты, руб</div>
-              <div class="tariffs__item tariffs__item_head">Максимальный срок оказания услуги</div>
-              <div class="tariffs__item tariffs__item_head">Выдача сертификата
-                (coin&nbsp;ID&nbsp;card)</div>
+    <main role="main" class="main">
+        <nav class="inner-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="inner-nav__list">
+                            <li class="inner-nav__item"><a href="what-is.html" class="inner-nav__link ">Что такое грейдинг и слабирование</a>
+                            </li>
+                            <li class="inner-nav__item"><a href="kinds.html" class="inner-nav__link">Виды слабов</a></li>
+                            <li class="inner-nav__item"><a href="processes.html" class="inner-nav__link">Описание процесса</a></li>
+                            <li class="inner-nav__item"><a href="rating-scale.html" class="inner-nav__link">Шкала оценки</a></li>
+                            <li class="inner-nav__item"><a href="payment.html" class="inner-nav__link">Условия оплаты</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="tariffs__row">
-              <div class="tariffs__item">
-                Базовый
-                <span> 700 руб</span>
-              </div>
-              <div class="tariffs__item">
-                До 10 000</div>
-              <div class="tariffs__item">
-                27 дней</div>
-              <div class="tariffs__item">
-                –
-              </div>
+        </nav>
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner__inner" style="background-image: url('assets/img/bn-03.jpg')">
+                            <h1 class="banner__title">Условия оплаты</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tariffs__row">
-              <div class="tariffs__item">
-                Стандарт
-                <span> 1400 руб</span>
-              </div>
-              <div class="tariffs__item">До 50 000</div>
-              <div class="tariffs__item">21 день</div>
-              <div class="tariffs__item">–</div>
-            </div>
-            <div class="tariffs__row">
-              <div class="tariffs__item">
-                Классик
-                <span> 1900 руб</span>
-              </div>
-              <div class="tariffs__item">До 100 000</div>
-              <div class="tariffs__item">21 день</div>
-              <div class="tariffs__item">–</div>
-            </div>
-            <div class="tariffs__row">
-              <div class="tariffs__item">
-                Оптимум
-                <span> 2900 руб</span>
-              </div>
-              <div class="tariffs__item">До 200 000</div>
-              <div class="tariffs__item">21 день</div>
-              <div class="tariffs__item">–</div>
-            </div>
-            <div class="tariffs__row">
-              <div class="tariffs__item">
-                Элит
-                <span> 4900 руб</span>
-              </div>
-              <div class="tariffs__item">До 500 000</div>
-              <div class="tariffs__item">12 дней</div>
-              <div class="tariffs__item">–</div>
-            </div>
-            <div class="tariffs__row">
-              <div class="tariffs__item">
-                Премиум
-                <span>4900 руб + 1%</span>
-                <p>от рыночной стоимости монеты</p>
-              </div>
-              <div class="tariffs__item">Свыше 500 000</div>
-              <div class="tariffs__item">7 дней</div>
-              <div class="tariffs__item">–</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="add-service">
-            <h2 class="green">Дополнительные услуги</h2>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Рекапсуляция</span></div>
-              <div class="add-service__item">Повторная упаковка монеты в случае повреждения капсулы</div>
-              <div class="add-service__item"><span>350 руб</span></div>
-            </div>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Выдача сертификата,
+        </section>
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="tariffs">
+                            <div class="tariffs__row tariffs__row_head">
+                                <div class="tariffs__item tariffs__item_head">Тариф, стоимость услуги</div>
+                                <div class="tariffs__item tariffs__item_head">Рыночная стоимость монеты, руб</div>
+                                <div class="tariffs__item tariffs__item_head">Максимальный срок оказания услуги</div>
+                                <div class="tariffs__item tariffs__item_head">Выдача сертификата
+                                    (coin&nbsp;ID&nbsp;card)</div>
+                            </div>
+                            <div class="tariffs__row">
+                                <div class="tariffs__item">
+                                    Базовый
+                                    <span> 700 руб</span>
+                                </div>
+                                <div class="tariffs__item">
+                                    До 10 000</div>
+                                <div class="tariffs__item">
+                                    27 дней</div>
+                                <div class="tariffs__item">
+                                    –
+                                </div>
+                            </div>
+                            <div class="tariffs__row">
+                                <div class="tariffs__item">
+                                    Стандарт
+                                    <span> 1400 руб</span>
+                                </div>
+                                <div class="tariffs__item">До 50 000</div>
+                                <div class="tariffs__item">21 день</div>
+                                <div class="tariffs__item">–</div>
+                            </div>
+                            <div class="tariffs__row">
+                                <div class="tariffs__item">
+                                    Классик
+                                    <span> 1900 руб</span>
+                                </div>
+                                <div class="tariffs__item">До 100 000</div>
+                                <div class="tariffs__item">21 день</div>
+                                <div class="tariffs__item">–</div>
+                            </div>
+                            <div class="tariffs__row">
+                                <div class="tariffs__item">
+                                    Оптимум
+                                    <span> 2900 руб</span>
+                                </div>
+                                <div class="tariffs__item">До 200 000</div>
+                                <div class="tariffs__item">21 день</div>
+                                <div class="tariffs__item">–</div>
+                            </div>
+                            <div class="tariffs__row">
+                                <div class="tariffs__item">
+                                    Элит
+                                    <span> 4900 руб</span>
+                                </div>
+                                <div class="tariffs__item">До 500 000</div>
+                                <div class="tariffs__item">12 дней</div>
+                                <div class="tariffs__item">–</div>
+                            </div>
+                            <div class="tariffs__row">
+                                <div class="tariffs__item">
+                                    Премиум
+                                    <span>4900 руб + 1%</span>
+                                    <p>от рыночной стоимости монеты</p>
+                                </div>
+                                <div class="tariffs__item">Свыше 500 000</div>
+                                <div class="tariffs__item">7 дней</div>
+                                <div class="tariffs__item">–</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="add-service">
+                            <h2 class="green">Дополнительные услуги</h2>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Рекапсуляция</span></div>
+                                <div class="add-service__item">Повторная упаковка монеты в случае повреждения капсулы</div>
+                                <div class="add-service__item"><span>350 руб</span></div>
+                            </div>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Выдача сертификата,
         Повторная выдача</span></div>
-              <div class="add-service__item">Выдача сертификата  (Coin ID Card) при сертификации
-                по тарифам БАЗОВЫЙ, СТАНДАРТ, КЛАССИК, а также
-                повторная выдача сертификата</div>
-              <div class="add-service__item"><span>500 руб</span></div>
-            </div>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Помещение монеты в капсулу увеличенного размера</span></div>
-              <div class="add-service__item">Монеты диаметром от 41 мм помещаются в капсулу
-                увеличенного размера (120 мм*85 мм)</div>
-              <div class="add-service__item"><span>250 руб</span></div>
-            </div>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Фотография монеты
+                                <div class="add-service__item">Выдача сертификата (Coin ID Card) при сертификации
+                                    по тарифам БАЗОВЫЙ, СТАНДАРТ, КЛАССИК, а также
+                                    повторная выдача сертификата</div>
+                                <div class="add-service__item"><span>500 руб</span></div>
+                            </div>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Помещение монеты в капсулу увеличенного размера</span></div>
+                                <div class="add-service__item">Монеты диаметром от 41 мм помещаются в капсулу
+                                    увеличенного размера (120 мм*85 мм)</div>
+                                <div class="add-service__item"><span>250 руб</span></div>
+                            </div>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Фотография монеты
         в высоком качестве</span></div>
-              <div class="add-service__item">Фотография аверса и реверса в высоком качестве
-                JPEG направляется на электронную почту
-                заказчика</div>
-              <div class="add-service__item"><span>100 руб</span></div>
-            </div>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Определение химического
+                                <div class="add-service__item">Фотография аверса и реверса в высоком качестве
+                                    JPEG направляется на электронную почту
+                                    заказчика</div>
+                                <div class="add-service__item"><span>100 руб</span></div>
+                            </div>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Определение химического
         анализа монет
         (РФА анализ)</span></div>
-              <div class="add-service__item">Отчет по результатам анализа включает в себя изображение
-                монеты, вес и резуальтаты измерений</div>
-              <div class="add-service__item"><span>1500 руб</span></div>
-            </div>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Минимальный грейд</span></div>
-              <div class="add-service__item">По запросу клиента может быть указан минимальный грейд
-                монеты. Если в процессе сертификаци, монета
-                не набирает минимального грейда, она не слабируется</div>
-              <div class="add-service__item"><span></span></div>
-            </div>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Профессиональная мойка
+                                <div class="add-service__item">Отчет по результатам анализа включает в себя изображение
+                                    монеты, вес и резуальтаты измерений</div>
+                                <div class="add-service__item"><span>1500 руб</span></div>
+                            </div>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Минимальный грейд</span></div>
+                                <div class="add-service__item">По запросу клиента может быть указан минимальный грейд
+                                    монеты. Если в процессе сертификаци, монета
+                                    не набирает минимального грейда, она не слабируется</div>
+                                <div class="add-service__item"><span></span></div>
+                            </div>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Профессиональная мойка
         монет</span></div>
-              <div class="add-service__item">Мойка выполняется по решению эксперта. В сложных
-                случаях стоимость может быть увеличена по
-                согласованию с заказчиком.</div>
-              <div class="add-service__item"><span>1000 руб</span></div>
-            </div>
-            <div class="add-service__row">
-              <div class="add-service__item"><span>Индивидуальный дизайн
+                                <div class="add-service__item">Мойка выполняется по решению эксперта. В сложных
+                                    случаях стоимость может быть увеличена по
+                                    согласованию с заказчиком.</div>
+                                <div class="add-service__item"><span>1000 руб</span></div>
+                            </div>
+                            <div class="add-service__row">
+                                <div class="add-service__item"><span>Индивидуальный дизайн
         бирки слаба</span></div>
-              <div class="add-service__item">Дизайн разрабатывается бесплатно. Дополнительно
-                взимается плата за каждую монету</div>
-              <div class="add-service__item"><span>100 руб</span></div>
+                                <div class="add-service__item">Дизайн разрабатывается бесплатно. Дополнительно
+                                    взимается плата за каждую монету</div>
+                                <div class="add-service__item"><span>100 руб</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <ol>
+                            <li>1. В процессе проведения экспертизы принятых у клиента монет ННР имеет право отказать в проведении сертификации в
+                                случае, если будет выявлено, что монета является поддельной. Стоимость услуг в данном случае возврату не подлежит.
+                            </li>
+                            <li>2. Экспертиза подлинности и определение степени сохранности монет по фотографиям не проводятся.</li>
+                            <li>3. Проведение процедуры сертификации по срочному тарифу (7 дней) +50%.</li>
+                            <li>4. В случае заказа дополнительных услуг (индивидуальный дизайн бирки слаба; мойка; минимальный грейд) срок оказания
+                                услуги может быть увеличен.
+                            </li>
+                            <li>*5. В случае если после изучения монеты необходимо будет провести дополнительные исследования или привлечь
+                                профильных экспертов, срок оказания услуги может быть увеличен.
+                            </li>
+                            <li>6. Для монетных браков современных монет действует единый тариф - 1400 рублей.</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-4 offset-lg-1">
+                        <img src="assets/img/ab-01.jpg" alt="Условия оплаты">
+                    </div>
+
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-7">
-          <ol>
-            <li>1. В процессе проведения экспертизы принятых у клиента монет ННР имеет право отказать в проведении сертификации в
-              случае, если будет выявлено, что монета является поддельной. Стоимость услуг в данном случае возврату не подлежит.
-            </li>
-            <li>2. Экспертиза подлинности и определение степени сохранности монет по фотографиям не проводятся.</li>
-            <li>3. Проведение процедуры сертификации по срочному тарифу (7 дней) +50%.</li>
-            <li>4. В случае заказа дополнительных услуг (индивидуальный дизайн бирки слаба; мойка; минимальный грейд) срок оказания
-              услуги может быть увеличен.
-            </li>
-            <li>*5. В случае если после изучения монеты необходимо будет провести дополнительные исследования или привлечь
-              профильных экспертов, срок оказания услуги может быть увеличен.
-            </li>
-            <li>6. Для монетных браков современных монет действует единый тариф - 1400 рублей.</li>
-          </ol>
+    </main>
+    <div class="js-stop-header"></div>
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal__form modal-content">
+                <form action="" class="form">
+                    <div class="modal__heading">
+                        <p class="modal__caption">Вход в личный кабинет</p>
+                        <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <label for="login-email" class="form__label">
+                        <p>Электронная почта <span>*</span></p>
+                        <input class="form__input" id="login-email" name="login-email" type="email" placeholder="Введите e-mail">
+                    </label>
+                    <label for="login-pass" class="form__label">
+                        <p>Пароль <span>*</span></p>
+                        <input class="form__input" id="login-pass" name="login-pass" type="password" placeholder="Введите пароль">
+                    </label>
+                    <button class="btn-reset btn form__btn modal__btn">Войти</button>
+                    <button type="button" class="btn-reset btn form__btn modal__btn form__btn_transparent js-close-login" data-toggle="modal" data-target="#register" data-dismiss="modal">Регистрация</button>
+                    <button type="button" class="modal__link btn-reset" data-toggle="modal" data-target="#confirm" data-dismiss="modal">Восстановить пароль</button>
+                </form>
+            </div>
         </div>
-        <div class="col-md-4 offset-lg-1">
-          <img src="assets/img/ab-01.jpg" alt="Условия оплаты">
-        </div>
-        
-      </div>
     </div>
-  </div>
-</main>
-<div class="js-stop-header"></div>
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-  <div class="modal__form modal-content">
-    <form action="" class="form">
-      <div class="modal__heading">
-      <p class="modal__caption">Вход в личный кабинет</p>
-        <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <label for="login-email" class="form__label">
-        <p>Электронная почта <span>*</span></p>
-        <input
-          class="form__input"
-          id="login-email"
-          name="login-email"
-          type="email"
-          placeholder="Введите e-mail"
-        >
-      </label>
-      <label for="login-pass" class="form__label">
-       <p>Пароль <span>*</span></p>
-        <input
-          class="form__input"
-          id="login-pass"
-          name="login-pass"
-          type="password"
-          placeholder="Введите пароль"
-        >
-      </label>
-      <button class="btn-reset btn form__btn modal__btn">Войти</button>
-      <button type="button" class="btn-reset btn form__btn modal__btn form__btn_transparent js-close-login" data-toggle="modal" data-target="#register" data-dismiss="modal">Регистрация</button>
-      <button type="button" class="modal__link btn-reset"  data-toggle="modal" data-target="#confirm" data-dismiss="modal">Восстановить пароль</button>
-    </form>
-  </div>
-  </div>
-</div>
 
 
-<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal__form modal-content">
-      <form action="" class="form">
-        <div class="modal__heading">
-          <p class="modal__caption">Регистрация</p>
-          <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal__form modal-content">
+                <form action="" class="form">
+                    <div class="modal__heading">
+                        <p class="modal__caption">Регистрация</p>
+                        <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <label for="register-name" class="form__label">
+                        <p>ФИО <span>*</span></p>
+                        <input class="form__input" id="register-name" name="register-name" type="text" placeholder="Введите ФИО">
+                    </label>
+                    <label for="register-phone" class="form__label">
+                        <p>Номер телефона <span>*</span></p>
+                        <input class="form__input phone-mask" id="register-phone" name="login-name" type="text" placeholder="Введите номер телефона">
+                    </label>
+                    <label for="register-email" class="form__label">
+                        <p>Электронная почта <span>*</span></p>
+                        <input class="form__input" id="register-email" name="register-email" type="email" placeholder="Введите e-mail">
+                    </label>
+                    <label for="register-pass" class="form__label">
+                        <p>Пароль <span>*</span></p>
+                        <input class="form__input" id="register-pass" name="register-pass" type="password" placeholder="Введите пароль">
+                    </label>
+                    <label for="repeat-pass" class="form__label">
+                        <p>Повторите пароль <span>*</span></p>
+                        <input class="form__input" id="repeat-pass" name="repeat-pass" type="password" placeholder="Введите пароль">
+                    </label>
+                    <button class="btn-reset btn form__btn modal__btn">Регистрация</button>
+                    <button class="btn-reset btn form__btn modal__btn form__btn_transparent" data-toggle="modal" data-dismiss="modal" data-target="#login">Есть аккаунт? Войти</button>
+                </form>
+            </div>
         </div>
-        <label for="register-name" class="form__label">
-          <p>ФИО <span>*</span></p>
-          <input
-            class="form__input"
-            id="register-name"
-            name="register-name"
-            type="text"
-            placeholder="Введите ФИО"
-          >
-        </label>
-        <label for="register-phone" class="form__label">
-          <p>Номер телефона <span>*</span></p>
-          <input
-            class="form__input phone-mask"
-            id="register-phone"
-            name="login-name"
-            type="text"
-            placeholder="Введите номер телефона"
-          >
-        </label>
-        <label for="register-email" class="form__label">
-          <p>Электронная почта <span>*</span></p>
-          <input
-            class="form__input"
-            id="register-email"
-            name="register-email"
-            type="email"
-            placeholder="Введите e-mail"
-          >
-        </label>
-        <label for="login-pass" class="form__label">
-          <p>Пароль <span>*</span></p>
-          <input
-            class="form__input"
-            id="register-pass"
-            name="login-pass"
-            type="password"
-            placeholder="Введите пароль"
-          >
-        </label>
-        <label for="repeat-pass" class="form__label">
-          <p>Повторите пароль <span>*</span></p>
-          <input
-            class="form__input"
-            id="repeat-pass"
-            name="repeat-pass"
-            type="password"
-            placeholder="Введите пароль"
-          >
-        </label>
-        <button class="btn-reset btn form__btn modal__btn">Регистрация</button>
-        <button class="btn-reset btn form__btn modal__btn form__btn_transparent" data-toggle="modal" data-dismiss="modal" data-target="#login">Есть аккаунт? Войти</button>
-      </form>
     </div>
-  </div>
-</div>
 
-<div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal__form modal-content">
-      <form action="" class="form">
-        <div class="modal__heading">
-          <p class="modal__caption">Подтверждение регистрации</p>
-          <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal__form modal-content">
+                <form action="" class="form">
+                    <div class="modal__heading">
+                        <p class="modal__caption">Подтверждение регистрации</p>
+                        <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <p class="modal__subcaption">Для завершения регистрации, мы отправили код на указанную почту </p>
+                    <label for="confirm-code" class="form__label">
+                        <p>Введите код <span>*</span></p>
+                        <input class="form__input" id="confirm-code" name="confirm-code" type="text" placeholder="Введите код подтверждения">
+                    </label>
+                    <button type="button" class="btn-reset btn form__btn modal__btn">Подтвердить</button>
+                    <button type="button" class="btn-reset btn form__btn modal__btn form__btn_transparent">Отправить код повторно</button>
+                </form>
+            </div>
         </div>
-        <p class="modal__subcaption">Для завершения регистрации, мы отправили код на указанную почту </p>
-        <label for="confirm-code" class="form__label">
-          <p>Введите код <span>*</span></p>
-          <input
-            class="form__input"
-            id="confirm-code"
-            name="confirm-code"
-            type="text"
-            placeholder="Введите код подтверждения"
-          >
-        </label>
-        <button type="button" class="btn-reset btn form__btn modal__btn">Подтвердить</button>
-        <button type="button" class="btn-reset btn form__btn modal__btn form__btn_transparent">Отправить код повторно</button>
-      </form>
     </div>
-  </div>
-</div>
-<!-- build:js -->
-<script src="assets/vendor/js/jquery.js"></script>
-<script src="assets/vendor/js/popper.js"></script>
-<script src="assets/vendor/js/bootstrap.js"></script>
-<script src="assets/vendor/js/swiper-bundle.js"></script>
-<script src="assets/vendor/js/inputmask.min.js"></script>
-<script src="assets/js/util/crossPlatform.js"></script>
-<script src="assets/js/app.js"></script>
-<!-- endbuild -->
+    <!-- build:js -->
+    <script src="assets/vendor/js/jquery.js"></script>
+    <script src="assets/vendor/js/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/swiper-bundle.js"></script>
+    <script src="assets/vendor/js/inputmask.min.js"></script>
+    <script src="assets/js/util/crossPlatform.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
 
 
 </body>

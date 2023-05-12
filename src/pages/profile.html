@@ -1,0 +1,56 @@
+---
+layout: cabinet
+title: Редактировать профиль
+---
+
+<section class="profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form action="" class="form">
+          <label for="profile-name" class="form__label">
+            <p>ФИО <span>*</span></p>
+            <input
+              class="form__input profile__input"
+              id="profile-name"
+              name="profile-name"
+              type="text"
+              value="Иванов Иван Андреевич"
+            >
+          </label>
+          <label for="profile-phone" class="form__label">
+            <p>Номер телефона <span>*</span></p>
+            <input
+              class="form__input profile__input phone-mask"
+              id="profile-phone"
+              name="login-name"
+              type="text"
+              value="+7 (912) 345-67-89"
+            >
+          </label>
+          <label for="profile-email" class="form__label">
+            <p>Электронная почта <span>*</span></p>
+            <input
+              class="form__input profile__input"
+              id="profile-email"
+              name="profile-email"
+              type="email"
+              value="ivanov@andreev.ru"
+            >
+          </label>
+          <label for="profile-pass" class="form__label">
+            <p>Пароль <span>*</span></p>
+            <input
+              class="form__input profile__input"
+              id="profile-pass"
+              name="profile-pass"
+              type="password"
+              value="1234567890000"
+            >
+          </label>
+          <button class="btn-reset btn form__btn modal__btn">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
